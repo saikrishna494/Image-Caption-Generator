@@ -1,0 +1,56 @@
+*{
+    box-sizing:content-box;
+}
+body{
+    background:gold;
+}
+span{
+    font-size: x-small;
+    text-decoration: solid;
+}
+.container{
+    position:absolute;
+    left:50%;
+    top:50%;
+    transform: translate(-50%,-50%);
+}
+.list{
+    background:#fff;
+    padding:16px 12px;
+    box-shadow: 2px 6px 8px black;
+}
+.input-grup{
+    width:100%;
+    padding:6px;
+}
+label{
+    display:block;
+    padding:2px 0 12px 10px;
+}
+.button{
+    padding-left:12px;
+    margin-top: 8px;
+    margin-left:30px;
+}
+
+button{
+    color:#fff;
+    background:black;
+    border:1px solid rgb(249, 3, 3);
+    transition:0.5s  ease-out;
+}
+button:hover{
+    color:#080000;
+    background:#fff;
+    border:1.45px solid green;
+}
+
+a{
+    text-decoration: none;
+    color:#fff;
+    font-weight:normal;
+}
+a:hover{
+    background: white;
+    color:#060000;
+}
