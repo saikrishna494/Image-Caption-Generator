@@ -1,0 +1,92 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign-in</title>
+<style>
+/* Style for the container */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Style for the registration form */
+.list {
+    background-color: #f3f3f3;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+}
+
+h2 {
+    margin-top: 0;
+}
+
+.input-group {
+    margin-bottom: 10px;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Add more styles as needed */
+</style>
+    <script>
+        function validateForm() {
+            var password = document.getElementById("password").value;
+            var confirm_password = document.getElementById("confirm_password").value;
+            if (password !== confirm_password) {
+                alert("Passwords do not match!");
+                return false;
+            }
+        }
+    </script>
+</head>
+<body>
+    <div class="container">
+        <div class="list">
+            <form action="submit_form" method="post" onsubmit="return validateForm()">
+                <fieldset>
+                    <legend>Sign-up</legend>
+                    <div class="input-group">
+                        <h2>Registration</h2>
+                        <input type="text" id="name" name="username" placeholder="username" required>
+                        <input type="email" id="emial" name="emial" placeholder="email" required>
+                        <input type="password" id="password" name="password" placeholder="password" required>
+                        <input type="password" id="confirm_password" name="confirm_password" placeholder="Confirm Password" required>
+                        <button type="submit">Register</button>
+                    </div>
+                </fieldset>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
+
+                      
