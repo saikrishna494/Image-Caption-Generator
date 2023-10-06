@@ -1,163 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="stylesheet" href="/fonts/css/all.min.css">
+    <link rel="stylesheet" type = "text/css" href="{{ url_for('static', filename='/index.css') }}">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Web page</title>
-    <style>
-        /* Reset some default styles and set some basic styles */
-
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f5f5f5;
-            color: #333;
-            line-height: 1.6;
-        }
-        p{
-            line-height:1.6;
-            font: size 1.05em;
-            margin: 20px 0;
-        }
-        h1,h2,h3,h4,h5,h6{
-            color:#7fdbdb;
-            font-weight:normal;
-        }
-
-        /* Navigation */
-        .navigation {
-            background-color: #333;
-            color: #fff;
-            padding: 10px 0;
-        }
-
-        .navigation ul {
-            list-style: none;
-            text-align: center;
-        }
-
-        .navigation li {
-            display: inline-block;
-            margin: 0 15px;
-        }
-
-        .navigation a {
-            text-decoration: none;
-            color: #fff;
-            font-weight: bold;
-        }
-        .navigation a:hover{
-            color:chartreuse;
-        }
-        .navigation a:active{
-            color:red;
-        }
-        .section{
-            width:100%;
-            text-align:center;
-            background:#f5f5f5;
-        }
-        .section--dark{
-            background:#1b4848;
-            color:#fff;
-        }
-        /* Hero Section */
-        #hero {
-            background-color: #555;
-            color: #fff;
-            text-align: center;
-            padding: 100px;
-            margin:42px;
-        }
-        .section--content{
-            max-width:60%;
-            margin:auto;
-            padding:30px;
-            font-size: x-large;
-        }
-        .banner {
-            margin-bottom: 20px;
-        }
-
-        .icongroup {
-            margin-top: 20px;
-        }
-
-        .icon--group {
-            color: #fff;
-            font-size: 24px;
-            margin: 0 10px;
-        }
-
-        /* Other sections, diagrams, and content styling can be added here */
-
-        /* Footer Section */
-        .grid{
-            display : grid;
-            flex-wrap:wrap-reverse;
-            font-size:1rem;
-        }
-        .grid--item{
-            width:60%;
-            height:40%;
-            padding : 20px;
-            box-sizing:border-box;
-        }
-        grid--text{
-            margin-top:20px;
-            font-size:1.15em;
-            font-weight:bold;
-        }
-        #footer {
-            background-color: #333;
-            color: #fff;
-            text-align: center;
-            padding: 20px 0;
-        }
-
-        .footer-a {
-            margin-bottom: 10px;
-        }
-
-        #footer--a {
-            color: #fff;
-            text-decoration: none;
-            margin: 0 10px;
-        }
-
-        /* Responsive adjustments */
-        @media (max-width: 768px) {
-            .container {
-                padding: 10px;
-            }
-        }
-    </style>
 </head>
 <body>
     <div class="navigation">
         <nav>
             <ul>
                 <li><a href="/login" target="/login_test">Login</a></li>
-                <li><a href="Sign_in" target="/Sign_in">Sign-in</a></li>
+                <li><a href="Sign_in" target="/Sign_in">Sign-up</a></li>
             </ul>
         </nav>
     </div>
     <div class="section section--dark" id="hero">
-      <div class="section--content">
-            <div class="banner">
-                <p>Learn on following link's.....</p>
-                 <div class="icongroup">
-                        <a class="icon--group" href="https://github.com/topics/image-caption-generator" title=" github" target="_blank">
-                            <i class="fab fa-github"></i>
-                        </a>
-                    </div>
-            </div>
+      
                 <div class="ctabox">
                     <h1 class="ctabox--heading">Image Caption Generator</h1>
                     <div class="ctabox--content">
 
                         <p>In this Project we will be predicting the contents of an image by words one by one and make a sensible  sentence to be able to describe a image. A network of CNN and LSTM is used in this project. CNN is  used to extract features and LSTM to store the words one by one and make a sentence.However simple words in any language can be feed to the model to be  able to predict the words of the objects In an image Every day we see a lot of photographs in the  surroundings , on social media and in the newspapers. Humans are able to recognize photographs  themselves only.
-
                         </p>
                     </div>
                 </div>
@@ -185,7 +51,7 @@
             </p>
         </div>
 
-        <!-- ... Rest of your HTML content ... -->
+       
     </div>
     <div class="section section--dark">
  <div class="section--content">
@@ -212,7 +78,7 @@
                 </div>
             </div>    
         </div>
-        <!-- ... Rest of your HTML content ... -->
+       
     </div>
     <div class="section">
  <div class="section--content">
@@ -271,22 +137,6 @@
                 </a>
             </p>
         </div>
-
-        <!-- ... Rest of your HTML content ... -->
-    </div>
-    <div class="section section--dark" id="footer">
- <div class="section--content">
-            <h3 class="footer-a">
-                <span>This information was referenced</span> 
-            </h3>
-            <div> 
-                <a href="https://huggingface.co/spaces/flax-community/image-captioning" id="footer--a">Microsoft Hugging face</a>
-                <a href="https://milhidaka.github.io/chainer-image-caption/" id="footer--a">git-hub</a>
-            </div>
-
-        </div>
-
-        <!-- ... Rest of your HTML content ... -->
-    </div>
+    </div>  
 </body>
 </html>
