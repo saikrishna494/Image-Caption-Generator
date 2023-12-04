@@ -6,11 +6,9 @@ from keras.models import load_model
 import numpy as np
 from keras.layers import Dense,  LSTM, TimeDistributed, Embedding, Activation, RepeatVector,Concatenate
 from keras.models import Sequential, Model
-import cv2
 from keras.preprocessing.sequence import pad_sequences
 from tqdm import tqdm
 
-import cv2
 mysql_config ={
     'user':'root',
     'password':'root',
